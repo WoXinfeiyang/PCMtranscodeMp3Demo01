@@ -11,7 +11,7 @@ private:
 public:
     PCMtoMp3();
     ~PCMtoMp3();
-    int Init(int audioChannels, int bitRate, int sampleRate);
+    void Init(int audioChannels, int bitRate, int sampleRate);
     void PCMtranscodeMp3(const char* pcmFilePath,const char* mp3FilePath);
     void Destory();
 };
